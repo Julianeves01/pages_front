@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌸 Projeto de Página de Login com Next.js
 
-## Getting Started
+Este é um projeto de página de login desenvolvido com [Next.js](https://nextjs.org), criado com o comando [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-First, run the development server:
+## 🚀 Início Rápido
 
-```bash
+Para começar, execute o servidor de desenvolvimento:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 📂 |  Estrutura do Projeto
+app/: Contém os componentes e páginas da aplicação.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+styles/: Contém os arquivos CSS para estilização.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+public/: Contém arquivos estáticos como imagens e ícones.
 
-## Learn More
+## 📦 Componentes Principais
+- **Registro.jsx**: Componente para o botão de registro.
+- **Button.jsx**: Componente reutilizável para botões.
+- **Input.jsx**: Componente reutilizável para campos de entrada.
+- **Image.jsx**: Componente para exibir imagens.
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Estilos
+Os estilos são gerenciados utilizando módulos CSS para garantir escopo local e evitar conflitos de estilo.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ☁️ Deploy na Vercel
+A maneira mais fácil de fazer o deploy da sua aplicação Next.js é utilizando a [Plataforma Vercel](https://vercel.com/) dos criadores do Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Confira! [documentação de deploy do Next.js](https://nextjs.org/docs/deployment) para mais detalhes.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licença
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.

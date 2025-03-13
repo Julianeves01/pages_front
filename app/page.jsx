@@ -14,8 +14,6 @@ export default function Home() {
             setError("Por favor, preencha todos os campos!");
             return;
         }
-
-        // Permite qualquer email e senha
         router.push("/user");
     };
 
@@ -41,6 +39,12 @@ export default function Home() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         {error && <p className={styles.error}>{error}</p>}
+                        <div className={styles.options}>
+                            <label>
+                                <input type="checkbox" /> lembre-se de mim
+                            </label>
+                            <a href="#">Esqueci minha senha</a>
+                        </div>
                         <button type="submit" onClick={handleLogin}>
                             CONTINUE
                         </button>

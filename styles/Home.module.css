@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(244, 162, 203);
+    background-color: rgb(240, 180, 210);
     width: 100%;
     height: 100vh;
 }
 
 .container {
-    background-color: rgb(216, 181, 216);
+    background-color: rgb(238, 197, 238);
     height: 80vh;
     width: 70vw;
     border-radius: 20px;
@@ -21,7 +21,6 @@
     justify-content: center;
     align-items: center ;
     flex-direction: column;
-    background-color: gray;
     background-image: url("../public/rosaFundo.jpg");
     background-size: cover;
     width: 60%;
@@ -178,4 +177,40 @@
 font-family: 'Montserrat', sans-serif;
 font-weight: 500;
 color: rgb(158, 158, 158);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+    white-space: nowrap; 
+    gap: 8px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 11px;
+    width: 18px; 
+    height: 14px; 
+    accent-color: #0070f3; 
+}
+
+.options a {
+    color: #0070f3;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.options a:hover {
+    color: #005bb5; 
+    text-decoration: underline;
 }

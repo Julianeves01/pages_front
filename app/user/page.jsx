@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-
+import styles from "../../styles/user.module.css";
 
 export default function UserPage() {
     const router = useRouter();
@@ -10,16 +10,56 @@ export default function UserPage() {
     };
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column', gap: '20px' }}>
-            <h1>Login realizado com sucesso!</h1>
-            <img src="../perfil.png" alt="Foto do usuário" style={{ borderRadius: '50%' }} />
-            <p>Nome: Julia Simões Neves</p>
-            <p>Email: julia.s.neves6@aluno.senai.br</p>
-            <p>Data de Aniversário: 17/10/2007</p>
-            <p>Curso: Desenvolvimento de Sistemas</p>
-            <button onClick={handleLogout} style={{ padding: '10px 20px', backgroundColor: '#ff4d4d', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
-                Logout
-            </button>
+        <div className={styles.background}>
+            <div className={styles.container}>
+                <div className={styles.aside}>
+                    <img 
+                        src="./fundoLogin.jpg" 
+                        alt="Imagem de Fundo" 
+                        className={styles.asideImage} 
+                    />
+                </div>
+                <div className={styles.article}>
+                    <div className={styles.title}>
+                        <img 
+                            src="/perfil.jpeg" 
+                            alt="Foto de Perfil" 
+                            className={styles.profileImage} 
+                        />
+                        <h1>Julia Simões Neves</h1>
+                        <h3>@Julianeves01</h3>
+                    </div>
+                    <div className={styles.description}>
+                        <h2>CONHEÇA ME</h2>
+                        <p>Estudante do curso Desenvolvimento de Sistemas pela rede escolar técnica SENAI - VALINHOS</p>
+                    </div>
+                    <div className={styles.contact}>
+                        <div className={styles.link}>
+                            <img src="/linkedin.png" alt="linkedin" />
+                        </div>
+                        <div className={styles.link}>
+                            <img src="/github.png" alt="github" />
+                        </div>
+                        <div className={styles.link}>
+                            <img src="/instagram.jpg" alt="instagram" />
+                        </div>
+                        <div className={styles.link}>
+                            <img src="html.png" alt="html" />
+                        </div>
+                        <div className={styles.link}>
+                            <img src="/css.png" alt="css" />
+                        </div>
+                        <div className={styles.link}>
+                            <img src="/postman.png" alt="postman" />
+                        </div>
+                    </div>
+                    <div className={styles.bottom}>
+                        <button onClick={handleLogout} className={styles.logoutButton}>
+                            LOG OUT
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

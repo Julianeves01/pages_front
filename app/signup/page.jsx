@@ -5,11 +5,9 @@ import { useRouter } from "next/navigation";
 export default function SignUp() {
     const router = useRouter();
 
-    // Função para lidar com o clique no botão
     const handleLogin = () => {
-        // Exemplo de navegação ou lógica adicional
         console.log("Botão CONTINUE clicado");
-        router.push("/dashboard"); // Substitua "/dashboard" pelo caminho desejado
+        router.push("/redirect"); // Redireciona para a página de redirecionamento
     };
 
     return (
@@ -22,11 +20,8 @@ export default function SignUp() {
                         <h1>SIGN UP</h1>
                     </div>
                     <div className={styles.inputs}>
-                        <input type="text" placeholder="Julia Simões Neves" />
+                        <input type="text" placeholder="Digite seu nome" />
                         <input type="password" placeholder="Senha" />
-                        <div className={styles.password}>
-                            <p>Confirme sua senha</p>
-                        </div>
                         <input type="password" placeholder="Confirme sua senha" />
                         <button type="submit" onClick={handleLogin}>
                             CONTINUE

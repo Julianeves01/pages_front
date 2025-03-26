@@ -6,7 +6,7 @@ export default function UserPage() {
     const router = useRouter();
 
     const handleLogout = () => {
-        router.push("/");
+        router.push("/"); // Redireciona para a página inicial
     };
 
     return (
@@ -44,7 +44,7 @@ export default function UserPage() {
                             <img src="/instagram.jpg" alt="instagram" />
                         </div>
                         <div className={styles.link}>
-                            <img src="html.png" alt="html" />
+                            <img src="/html.png" alt="html" />
                         </div>
                         <div className={styles.link}>
                             <img src="/css.png" alt="css" />

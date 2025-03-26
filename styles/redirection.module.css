@@ -13,3 +13,17 @@
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+.redirectBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.redirectMessage {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}

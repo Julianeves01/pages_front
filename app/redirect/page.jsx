@@ -1,24 +1,25 @@
 "use client";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
-import styles from "../../styles/redirection.module.css";
+import { useState } from "react";
+import RedirectPage from "../redirect/page"; // Certifique-se de que o caminho está correto
+import styles from "../../styles/login.module.css";
 
-export default function RedirectPage() {
-    const router = useRouter();
+export default function LoginPage() {
+    const [isRedirecting, setIsRedirecting] = useState(false);
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            router.push("/user"); // Redireciona para a página de usuários após alguns segundos
-        }, 3000); // 3 segundos de espera
+    const handleContinue = () => {
+        setIsRedirecting(true); // Ativa o redirecionamento
+    };
 
-        return () => clearTimeout(timer); // Limpa o timer ao desmontar o componente
-    }, [router]);
+    if (isRedirecting) {
+        return <RedirectPage destination="/user" delay={3000} />;
+    }
 
     return (
-        <div className={styles.redirectBackground}>
-            <div className={styles.redirectMessage}>
-                <h1>Redirecionando, aguarde uns segundos...</h1>
-            </div>
+        <div className={styles.loginContainer}>
+            <h1>Bem-vindo à página de Login</h1>
+            <button onClick={handleContinue} className={styles.continueButton}>
+                Continuar
+            </button>
         </div>
     );
 }
